@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dummy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="exportBtn">Export Data</button>
+    <button class="importBtn">Import Data</button>
+    <input type="file" id="fileInput" name="myFile" accept=".json">
+    <div class="container">
+        <div class="unsorted">
+
+            <div class="uheading">
+                <div class="htitle">IMP & Urgent</div>
+                <div class="count">13</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+            </div>
+            <div class="ulist"></div>
+
+        </div>
+        <div class="main">
+            <div class="row">
+                <div class="col iu">
+                    <div class="heading">
+                        <div class="htitle">IMP & Urgent</div>
+                        <div class="count">13</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="list"></div>
+                </div>
+                <div class="col inu">
+
+                    <div class="heading">
+                        <div class="htitle">IMP & NOT Urgent</div>
+                        <div class="count">13</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="list"></div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col niu">
+
+                    <div class="heading">
+                        <div class="htitle">NOT IMP & Urgent</div>
+                        <div class="count">13</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="list"></div>
+
+                </div>
+                <div class="col ninu">
+
+                    <div class="heading">
+                        <div class="htitle">NOT IMP & NOT Urgent</div>
+                        <div class="count">13</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="list">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <form action="edit" method="post" class="sidebar">
+            <input type="text" name="title" id="title" placeholder="title here" value="Hello">
+            <textarea name="notes" id="notes" cols="30" placeholder="notes here" rows="10">Motorola is best?
+            </textarea>
+            <label for="section">Done: </label>
+            <input type="checkbox" name="item" class="fcheckbox">
+            <label for="section">Section: </label>
+            <select name="section" class="section">
+                <option value="default" selected>Select an option</option>
+                <option value="unsorted">Unsorted</option>
+                <option value="iu">Important & Urgent</option>
+                <option value="inu">Important & Not Urgent</option>
+                <option value="niu">Not Important & Urgent</option>
+                <option value="ninu">Not Important & Not Urgent</option>
+            </select>
+            <button type="submit" class="submit">Save</button>
+            <button class="createTask">CreateNew</button>
+            <button class="deleteTask">Delete</button>
+
+        </form>
+    </div>
+    <div id="context-menu" class="context-menu">
+        <ul>
+            <li id="edit-option">Edit</li>
+            <li id="delete-option">Delete</li>
+            <li id="done-option">Done</li>
+            <li id="default-option">Default Menu</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
